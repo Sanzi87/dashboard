@@ -1,6 +1,7 @@
 import React from 'react';
-import Sidebar from '../login/_components/Sidebar';
-import Navbar from '../login/_components/Navbar';
+import Sidebar from './_components/Sidebar';
+import Navbar from './_components/Navbar';
+import { Flex } from '@radix-ui/themes';
 
 export default function DashboardLayout({
   children,
@@ -8,10 +9,14 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <Sidebar />
-      <Navbar />
-      Dashboard layout
-    </div>
+    <Flex className=''>
+      <Flex className='w-56'>
+        <Sidebar />
+      </Flex>
+      <Flex className=' flex-col flex-1'>
+        <Navbar />
+        {children}
+      </Flex>
+    </Flex>
   );
 }

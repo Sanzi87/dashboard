@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import '@radix-ui/themes/styles.css';
+import { Theme, ThemePanel } from '@radix-ui/themes';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
@@ -16,8 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <main className=''>{children}</main>
+      <body>
+        <Theme accentColor='teal' radius='none' appearance='dark'>
+          <main className=''>{children}</main>
+        </Theme>
       </body>
     </html>
   );

@@ -13,7 +13,7 @@ export default function DashboardLayout({
       <Flex className='w-56'>
         <Sidebar />
       </Flex>
-      <Flex className=' flex-col flex-1'>
+      <Flex className=' flex-col flex-1 m-5'>
         <Navbar />
         {children}
       </Flex>

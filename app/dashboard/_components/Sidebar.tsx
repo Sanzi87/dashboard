@@ -2,7 +2,10 @@ import React from 'react';
 import {
   MdAnalytics,
   MdAttachMoney,
+  MdComment,
   MdDashboard,
+  MdEditDocument,
+  MdGrading,
   MdHelpCenter,
   MdLogout,
   MdOutlineSettings,
@@ -35,9 +38,24 @@ const menuItems = [
         icon: <MdShoppingBag />,
       },
       {
-        title: 'Transactions',
-        path: '/dashboard/transactions',
+        title: 'Orders',
+        path: '/dashboard/orders',
         icon: <MdAttachMoney />,
+      },
+      {
+        title: 'Pages',
+        path: '/dashboard/pages',
+        icon: <MdGrading />,
+      },
+      {
+        title: 'Posts',
+        path: '/dashboard/posts',
+        icon: <MdEditDocument />,
+      },
+      {
+        title: 'Comments',
+        path: '/dashboard/comments',
+        icon: <MdComment />,
       },
     ],
   },

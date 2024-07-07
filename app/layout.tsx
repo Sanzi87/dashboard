@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <Theme accentColor='teal' radius='none' appearance='dark'>
+        <Theme accentColor='teal' radius='medium' appearance='dark'>
           <main className=''>{children}</main>
         </Theme>
       </body>

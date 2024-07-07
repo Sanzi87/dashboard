@@ -17,7 +17,7 @@ const MenuLink = ({ item }: linkProps) => {
   return (
     <Link
       href={item.path}
-      className={`my-1 rounded-lg p-5 flex items-center gap-2 text-white hover:text-zinc-400 text-base hover:bg-zinc-700 ${
+      className={`my-1 rounded-lg p-5 flex items-center gap-2 text-white hover:text-teal-300 text-base hover:bg-zinc-700 ${
         pathname === item.path && ' bg-zinc-700'
       }`}
     >

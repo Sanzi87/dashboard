@@ -98,7 +98,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className='sticky p-5 bg-zinc-900 w-full'>
+    <div className='sticky p-4 bg-zinc-900 w-full'>
       <Flex className='items-center gap-5 mb-5'>
         <Image
           className='rounded-full object-cover mb-7'

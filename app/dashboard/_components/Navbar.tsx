@@ -30,9 +30,9 @@ const Navbar = () => {
           </TextField.Root>
         </Flex>
         <Flex className='items-center gap-4 !hidden md:!flex'>
-          <MdOutlineChat size={20} />
-          <MdNotifications size={20} />
-          <MdPublic size={20} />
+          <MdOutlineChat size={20} className='hover:text-teal-400' />
+          <MdNotifications size={20} className='hover:text-teal-400' />
+          <MdPublic size={20} className='hover:text-teal-400' />
         </Flex>
       </Flex>
     </Flex>

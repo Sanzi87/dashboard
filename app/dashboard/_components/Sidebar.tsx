@@ -4,6 +4,7 @@ import {
   MdAttachMoney,
   MdDashboard,
   MdHelpCenter,
+  MdLogout,
   MdOutlineSettings,
   MdPeople,
   MdShoppingBag,
@@ -11,7 +12,7 @@ import {
   MdWork,
 } from 'react-icons/md';
 import MenuLink from './MenuLink';
-import { Box, Flex } from '@radix-ui/themes';
+import { Box, Button, Flex } from '@radix-ui/themes';
 import Image from 'next/image';
 
 const menuItems = [
@@ -82,7 +83,7 @@ const Sidebar = () => {
     <div className='sticky p-5 bg-zinc-900 w-full'>
       <Flex className='items-center gap-5 mb-5'>
         <Image
-          className='rounded-full object-cover'
+          className='rounded-full object-cover mb-7'
           src='/avatar.svg'
           alt='User'
           width={50}
@@ -91,8 +92,14 @@ const Sidebar = () => {
         <Flex className='flex-col '>
           <span className='font-semibold'>John Doe</span>
           <span className='text-xs text-zinc-400'>Administrator</span>
+
+          <Button className='!mt-2'>
+            <MdLogout />
+            Logout
+          </Button>
         </Flex>
       </Flex>
+
       <ul>
         {menuItems.map((cat) => (
           <li className='text-zinc-400 text-sm my-3' key={cat.title}>
